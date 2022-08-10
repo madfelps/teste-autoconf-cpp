@@ -1,0 +1,132 @@
+devices:
+    common: []
+    debug: []
+    release: []
+dockercomposefile:
+    common: ''
+    debug: ''
+    release: ''
+extraparms:
+    common: {}
+    debug: {}
+    release: {}
+id: 9ba52bbc-20a1-49b5-b321-193dcd224e7d
+images:
+    debug: ''
+    release: ''
+imagetags:
+    debug: cpptesteautoconf_arm64v8-debian-no-ssh_bullseye_debug_9ba52bbc-20a1-49b5-b321-193dcd224e7d
+    release: cpptesteautoconf_arm64v8-debian-no-ssh_bullseye_release_9ba52bbc-20a1-49b5-b321-193dcd224e7d
+modificationdate: '2022-08-10T16:13:57.374440'
+networks:
+    common: []
+    debug: []
+    release: []
+otapackagename: ''
+otapackageversion: 1.0.0
+platformid: arm64v8-debian-no-ssh_bullseye
+ports:
+    common: {}
+    debug: {}
+    release: {}
+privatekey: '-----BEGIN RSA PRIVATE KEY-----
+
+    MIIEpQIBAAKCAQEA4mX8sJ7WOdrvf/jPMlSpZLgEF6Mq3I0TP2i7HwBrfs0MRX3l
+
+    NrtaU8qBMmbnP+Gzr+AUkHMo2cNPDhWAonX/YAQYbuE7URhPJIWmt5EW0eN7sIR1
+
+    i0T72QnJZpIaJKdBTizhGEEmI3LWw5lsbh7XLndhwjkaHsDuKdL77Fe67tiNBiIC
+
+    cHMjNJtW9oAOXrz6YJC5PB1OPxjdvTHjMGJlTOgDFPdLdoy5zeqj+qBcOZsdUggl
+
+    8VeeYGkgyt6Tm1KtYudfU4ETvh1Tj990mOXbTRJfBL6bPBa1BqwJh0HwZS5mMVdm
+
+    77nj+NYlNKQWbtVoKiCRQ/9lmEBwvNzIpu+L3QIDAQABAoIBABOC1pQiHDRAOgO9
+
+    XZ3ozfBwK2oeFcOMJOyCCh5R2vHCmhwjDW36F37BJQFC/Qr0WJf/p8YLJqoduuJr
+
+    1/ooUSnlMHXd007Z2Xg8THHlfyH3iOFdiQPHnizGOyUr0jT2dRpXo86DTtYfP4L7
+
+    5exXnBPVFge3BBlCZ0QTesKTjPioZ3bDW0rHmyRgvXiK01OFdWvNYc0SSkcbQBtG
+
+    A/KqvHXW17h2W9zCxNCmJeDjiDqh5wD/Bb7XQnXpZxv7M9pFFws5rKnclP+TNXIY
+
+    gSpKRxNjLteEv08csL9YkXdpciKUjgLCGXQUfMm2vJwI9VAMf3J0SM3YrnPY5tH3
+
+    lRH5L8ECgYEA+wpbDDj2JgwFgPuOXX4vu4FpIYcYpRxYy/rdUfWrS76vHhiD5T49
+
+    BpEsHcKsEBLINejISA+u/2MQVVZXB3eoadIV+fCQ0QdtArI4sxVP+5jp/ob4f6lH
+
+    BtMZT1LQBmxrLTa6ncxy+64iQjGzbYLPlyr1/eHxRQK6zTynwj/Fgo8CgYEA5t8A
+
+    4rhx16EoPrcfkQrw62pEtbE06rREdNFIRiORbad0ePYCy5u6PCXEB7Zwnui4uN28
+
+    TDXrSBekWhP4sCbixV1LmXEGEZLIBTQLaaL55CktWjRdXh47vlX2C233pUG0sQhi
+
+    8L6Q1vfeYz+bBhDtLpi+Aj5z0yTH3+0PuF9EENMCgYEAurP/9P4kKzXDniL4xZXE
+
+    oDpl2vajoKCNdd80XPFOHX5KtSJcbdE1B75ORi/zUdz2JAnlcpqfdvbRPfaBsV8P
+
+    1OvXRlThD2TrcRblTmMqYh9e39q31BIsbenwJ+uaJTzbFPxgHF3iokXm2r4mCOtB
+
+    wtbDrrcsfjvCfEOBLNnK5gcCgYEAideRtsv7JIxS9Abv8PCAYX5EYdrYxl01Fi4y
+
+    IbZwyPCXKPVxO9HRwsGlphk2app2V+ID39i9joCXHzUXYU0GTmJilc2Wmv1xMTIe
+
+    skadPq2bJ2VmbaBNeVnnmnFgz6lIUf643BZbcg3yGH3MeDW49v45TCuvidxG/hqT
+
+    LTir8gMCgYEAq+ZuaKfOQ5AJzh9MUA4Q/W7bQKdnf+xPgNSFKjEmFqnrQ5Ad4xdm
+
+    WGX66jhaeuJP8QoTMmNjpRdwn3yC2QAUZ7suQAq0mLrajZR0QyAoZTs+RGd44zaM
+
+    l4yfGkGXbIUWVbzhyPDpI/Rx/+q7OBH8Qe73Dn0OxDIJ42EeGWF0FCE=
+
+    -----END RSA PRIVATE KEY-----
+
+    '
+props:
+    common:
+        appname: cpptesteautoconf
+        arg: ''
+        buildcommands: ''
+        buildfiles: ''
+        command: ''
+        devpackages: ''
+        env: ''
+        exename: bin/cpptesteautoconf
+        expose: ''
+        extrapackages: ''
+        language: c-cpp-nossh
+        preinstallcommands: ''
+        sdkpostinstallcommands: ''
+        sdkpreinstallcommands: ''
+        targetcommands: ''
+        targetfiles: ''
+    debug:
+        arg: 'ARG SSHUSERNAME=#%application.username%#
+
+            '
+    release: {}
+publickey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDiZfywntY52u9/+M8yVKlkuAQXoyrcjRM/aLsfAGt+zQxFfeU2u1pTyoEyZuc/4bOv4BSQcyjZw08OFYCidf9gBBhu4TtRGE8khaa3kRbR43uwhHWLRPvZCclmkhokp0FOLOEYQSYjctbDmWxuHtcud2HCORoewO4p0vvsV7ru2I0GIgJwcyM0m1b2gA5evPpgkLk8HU4/GN29MeMwYmVM6AMU90t2jLnN6qP6oFw5mx1SCCXxV55gaSDK3pObUq1i519TgRO+HVOP33SY5dtNEl8Evps8FrUGrAmHQfBlLmYxV2bvueP41iU0pBZu1WgqIJFD/2WYQHC83Mim74vd
+sdkimages:
+    debug: sha256:17d413462fdfa423a4a18f3863433bdcec7b944ea455bf0e30891a088cbfefe7
+    release: ''
+sdkimagetags:
+    debug: cpptesteautoconf_arm64v8-debian-no-ssh_bullseye_debug_9ba52bbc-20a1-49b5-b321-193dcd224e7d_sdk_image
+    release: cpptesteautoconf_arm64v8-debian-no-ssh_bullseye_release_9ba52bbc-20a1-49b5-b321-193dcd224e7d_sdk_image
+sdksshaddress:
+    debug: null
+    release: null
+shutdownscript:
+    common: ''
+    debug: ''
+    release: ''
+startupscript:
+    common: ''
+    debug: ''
+    release: ''
+username: torizon
+volumes:
+    common: {}
+    debug: {}
+    release: {}

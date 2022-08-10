@@ -1,0 +1,116 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build_debug",
+            "command": "make",
+            "type": "shell",
+            "args": [],
+            "problemMatcher": {
+                "base": "$gcc"
+            },
+            "options": {
+                "env": {
+                    "CFLAGS": "-g",
+                    "CXXFLAGS": "-g"
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build_release",
+            "command": "make",
+            "type": "shell",
+            "args": [],
+            "problemMatcher": {
+                "base": "$gcc"
+            },
+            "options": {
+                "env": {
+                    "CFLAGS": "-g",
+                    "CXXFLAGS": "-g"
+                }
+            },
+            "group": "build"
+        },
+        {
+            "label": "clean",
+            "command": "make",
+            "type": "shell",
+            "args": [
+                "clean"
+            ],
+            "problemMatcher": {
+                "base": "$gcc"
+            },
+            "group": "build"
+        },
+        {
+            "label": "autoreconf",
+            "command": "autoreconf",
+            "type": "shell",
+            "args": [
+                "--install",
+                "--force"
+            ],
+            "problemMatcher": [],
+            "group": "none"
+        },
+        {
+            "label": "configure_debug",
+            "command": "./configure",
+            "type": "shell",
+            "args": [
+                "--prefix",
+                "/${command:torizon.getAppName}",
+                "--enable-debug",
+                "--host",
+                "${command:torizon.ccpp.getHostTriplet}"
+            ],
+            "problemMatcher": [],
+            "group": "none",
+            "dependsOn": [
+                "autoreconf"
+            ]
+        },
+        {
+            "label": "configure_release",
+            "command": "./configure",
+            "type": "shell",
+            "args": [
+                "--prefix",
+                "/${command:torizon.getAppName}",
+                "--host",
+                "${command:torizon.ccpp.getHostTriplet}"
+            ],
+            "problemMatcher": [],
+            "group": "none",
+            "dependsOn": [
+                "autoreconf"
+            ]
+        },
+        {
+            "detail": "deploy application to work folder",
+            "label": "deploy",
+            "command": "make",
+            "args": [
+                "install"
+            ],
+            "type": "shell",
+            "options": {
+                "env": {
+                    "DESTDIR": "${workspaceFolder}/${config:torizon.appfolder}/work"
+                }
+            },
+            "group": "none"
+        }
+    ],
+    "options": {
+        "env": {
+            "TORIZON_PROP_ARG": "ARG SSHUSERNAME=#%application.username%#\n"
+        }
+    }
+}

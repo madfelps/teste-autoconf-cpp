@@ -1,0 +1,36 @@
+label: Autotools-based project
+detail: '$(terminal) Creates a minimal sample, using autotools (automake, autoconf)'
+tags:
+  - console
+  - wayland
+env:
+  AR: '%{torizon.prefix}ar'
+  AS: '%{torizon.prefix}as'
+  CC: '%{torizon.prefix}gcc'
+  CXX: '%{torizon.prefix}g++'
+  CPP: '%{torizon.prefix}cpp'
+  STRIP: '%{torizon.prefix}strip'
+  LD: '%{torizon.prefix}ld'
+  CROSS_COMPILE: '%{torizon.prefix}'
+tasks:
+  debug: configure_debug
+  release: configure_release
+properties:
+  props:
+    common:
+      exename: bin/cpptesteautoconf
+checkfiles:
+  - Makefile.am
+testing:
+  - title: debian
+    createCmd: torizon.createCCPPApp
+    projName: CCPPAutotools
+    platformDistroCodeName: bullseye
+    baseContainer: debian-no-ssh_bullseye
+    mainSourceFile: FreshNewCCPPAutotools.c
+    mainSourceFileBreakPoint: 7
+    programOutput: Hello World!
+    hasSDKContainer: true
+    stopOnEntry: true
+    messageOnTerminalConsole: true
+extversion: 1.6.0
