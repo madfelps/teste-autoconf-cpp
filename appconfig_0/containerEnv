@@ -31,6 +31,6 @@ CC=aarch64-linux-gnu-gcc
 CROSS_COMPILE=aarch64-linux-gnu-
 DEBIAN_FRONTEND=noninteractive
 TERM_PROGRAM=vscode
-VSCODE_IPC_HOOK_CLI=/tmp/vscode-ipc-d8ea2c4e-78bd-48e5-a3ec-41d275293b79.sock
+VSCODE_IPC_HOOK_CLI=/tmp/vscode-ipc-3c8ed261-8555-44e0-a685-693265642477.sock
 _=/usr/bin/env
 DESTDIR=./appconfig_0/work

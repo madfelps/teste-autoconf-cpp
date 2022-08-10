@@ -40,6 +40,7 @@ jobs:
           APPID=$(./moses-linux/tdskt load ./appconfig_0/)
           echo "APPID=$APPID" >> $GITHUB_ENV
       - name: Build Application  
+      
         run: |
           docker run --rm -t -v ${PWD}:/workspaces/${{ github.event.repository.name }} --env-file ./appconfig_0/containerEnv \
           cpptesteautoconf_arm64v8-debian-no-ssh_bullseye_release_9ba52bbc-20a1-49b5-b321-193dcd224e7d_sdk_image bash -c "cd /workspaces/${{ github.event.repository.name }} && apt-get update && apt-get install -y autoconf && autoreconf --install --force && ./configure --prefix /cpptesteautoconf --host aarch64-linux-gnu && make install"
